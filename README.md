@@ -1,4 +1,4 @@
-# 🎵 Spotify-Inspired Local Music Player
+# 🎵 Spotify-Inspired [Local Music Player](https://bib58.github.io/Spotify_cloned/)
 
 A responsive music player web app that mimics the core experience of Spotify — built **entirely using HTML, CSS, and Vanilla JavaScript**.  
 
