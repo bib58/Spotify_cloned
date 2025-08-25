@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="left">
+        <div class="left_header">
+            <span><img src="Primary_Logo_Green_RGB.svg">
+                <p>Spotify</p>
+            </span>
+            <span class="line"></span>
+            <span><i class="fas fa-search search-icon"></i>
+                <p>Search</p>
+            </span>
+            <span><i class="fas fa-user"></i>
+                <p>Profile</p>
+            </span>
+        </div>
+        <div class="left_section">
+            <div class="part"><i class="fas fa-photo-video"></i>
+                <p>Your Library</p>
+            </div>
+            <div class="library" id="library"></div>
+
+            <div class="upload-zone" id="uploadZone">
+                <p>Drag & Drop your songs here or</p>
+                <input type="file" id="fileInput" accept=".mp3" hidden>
+                <button id="uploadBtn">Upload Song</button>
+            </div>
+        </div>
+        <div class="copyright">© 2025 Bibhu Kumar Singh</div>
+    </div>
+    <div class="right">
+        <i id="ham_2" class="fas fa-times"></i>
+        <div class="right_header">
+            <div class="right_header_left">
+                <span id="burger">
+                    <i id="ham_1" class="fas fa-bars"></i>
+                </span>
+                <div id="install" class="right_header_txt"><i class="fas fa-download"></i> Install App</div>
+            </div>
+            <div class="right_header_right">
+                <span class="right_header_txt">Sign Up</span>
+                <span class="right_header_txt log-btn">Login</span>
+            </div>
+        </div>
+        <div class="cont-text">Favs <i class="fas fa-heart" style="color: red;"></i></div>
+
+        <div class="card-container" id="favorites">
+        </div>
+
+
+        <div class="playbar">
+            <div class="singing">
+                <div id="song-info"></div>
+                <div class="song-buttons">
+                    <i id="piche" class="fas fa-backward"></i>
+                    <span id="play-pause"><i class="fas fa-pause"></i></span>
+                    <i id="age" class="fas fa-forward"></i>
+                    <span id="muteBtn"><i class="fas fa-volume-mute"></i></span>
+                    <i id="reset" class="fas fa-redo"></i>
+                </div>
+            </div>
+            <div class="seekbar">
+                <input type="range" id="seekbar" value="0" min="0" max="100">
+                <div class="time-display">
+                    <span id="current-time">00:00</span>
+                    <span> / </span>
+                    <span id="duration">00:00</span>
+                </div>
+            </div>
+        </div>
+
+
+        <footer class="footer">
+            <div class="footer-grid">
+                <div>
+                    <h4>Company</h4>
+                    <ul>
+                        <li>About</li>
+                        <li>Jobs</li>
+                        <li>For the Record</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Communities</h4>
+                    <ul>
+                        <li>For Artists</li>
+                        <li>Developers</li>
+                        <li>Advertising</li>
+                        <li>Investors</li>
+                        <li>Vendors</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Useful links</h4>
+                    <ul>
+                        <li>Support</li>
+                        <li>Free Mobile App</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Spotify Plans</h4>
+                    <ul>
+                        <li>Premium Individual</li>
+                        <li>Premium Duo</li>
+                        <li>Premium Family</li>
+                        <li>Premium Student</li>
+                        <li>Spotify Free</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="banner">
+                <i id="ban" class="fas fa-times"></i>
+                <div class="text-content">
+                    <p><strong>Preview of Spotify</strong></p>
+                    <p>Sign up to get unlimited songs and podcasts with occasional ads. No credit card needed.</p>
+                </div>
+                <button class="signup-btn">Sign up for free</button>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

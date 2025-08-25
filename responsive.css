@@ -1,0 +1,38 @@
+@media (max-width: 768px) {
+    .left {
+        position: absolute;
+        left: -100vw;
+        transition: left 0.6s cubic-bezier(0.77, 0, 0.175, 1);
+        z-index: 8841;
+    }
+    .right {
+        width: 100vw;
+        margin-left: 0;
+    }
+    #ham_1 {
+        display: block;
+        font-size: 25px;
+    }
+    #ham_2 {
+        position: absolute;
+        font-size: 30px;
+        top: 8;
+        left: 8;
+        z-index: 128734;
+    }
+}
+
+@media (max-width: 600px) {
+    .time-display {
+        width: 40%;
+    }
+    .seekbar {
+        width: 90%;
+        gap: 30px;
+    }
+}
+@media (max-width: 450px) {
+    .song-buttons {
+    margin-top: 10px;
+}
+}
